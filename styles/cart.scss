@@ -1,0 +1,98 @@
+@import './reset.min.scss';
+@import './fonts.scss';
+@import './mixins.scss';
+@import './vars.scss';
+
+.cart-content{
+    &__header-products{
+        display: grid;
+        grid-template-columns: 3.5fr 1.5fr 2fr 1fr;
+        padding-bottom: 26px;
+        border-bottom: 1px solid $colorPriceOld;
+        margin-bottom: 49px;
+        
+    }
+    &__header-products{
+        display: grid;
+        grid-template-columns: 3.5fr 1.5fr 2fr 1fr;
+        @include sameText();
+        font-size: 20px;
+    }
+    &__product-cart{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 3.5fr 1.5fr 2fr 1fr;
+        margin-bottom: 72px;
+        @include sameText();
+        font-size: 17px;
+    }
+    &__additionally{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 88px;
+    }
+}
+
+.product-cart{
+    &__item{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    &__image{
+        width: 125px;
+        height: 179px;
+    }
+    &__total-price{
+        &::before{
+            content: "\0024";
+        }
+    }
+    &__price{
+        &::before{
+            content: "\0024";
+        }
+    }
+}
+
+.additionally{
+    &__coupon{
+        width: 255px;
+        padding-bottom: 23px;
+        border-bottom: 1px solid #000;
+        @include sameText();
+        font-size: 17px;
+    }
+    &__add-coupon{
+        @include accentButton();
+        background-color: #fff;
+        border: 1px solid $accentColor;
+        color: $accentColor;
+    }
+    &__update-cart{
+        @include accentButton();
+        background-color: #fff;
+        border: 1px solid $accentColor;
+        color: $accentColor;
+    }
+}
+
+.total-amount{
+    &__wrap{
+        display: flex;
+        justify-content: end;
+    }
+    &__sub-total{
+        text-align: end;
+    }
+    &__sub-price{
+        &::before{
+            content: "\0024";
+        }
+    }
+    &__summary-price{
+        &::before{
+            content: "\0024";
+        }
+    }
+}
