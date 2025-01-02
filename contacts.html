@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/commonStyles.css">
-    <link rel="stylesheet" href="../styles/create-order.css">
-    <title>Order</title>
+    <link rel="stylesheet" href="../styles/contacts.css">
+    <title>Contacts</title>
 </head>
 <body>
     <section class="main-block">
         <header class="header center">
-            <a href="../index.html" class="header__logo">
+            <a href="./index.html" class="header__logo">
                 <svg width="18.066589" height="25.000000" viewBox="0 0 18.0666 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <path id="Vector" d="M18.05 22.64L17.69 20.97C16.95 17.53 15.6 14.29 13.67 11.35L13.67 8.64C14.56 7.97 15.13 6.9 15.13 5.71L15.13 4.24C15.13 3.84 14.8 3.51 14.4 3.51L13.67 3.51L13.67 0.73C13.67 0.32 13.34 0 12.93 0C12.53 0 12.2 0.32 12.2 0.73L12.2 3.52C10.89 3.6 9.73 4.29 9.03 5.31C8.32 4.29 7.17 3.6 5.85 3.52L5.85 0.73C5.85 0.32 5.53 0 5.12 0C4.72 0 4.39 0.32 4.39 0.73L4.39 3.51L3.66 3.51C3.25 3.51 2.92 3.84 2.92 4.24L2.92 5.71C2.92 6.9 3.5 7.97 4.39 8.64L4.39 11.35C2.46 14.29 1.11 17.53 0.37 20.97L0.01 22.64C-0.07 23 0.13 23.36 0.48 23.49C3.23 24.49 6.1 25 9.03 25C11.95 25 14.83 24.49 17.58 23.49C17.92 23.36 18.12 23 18.05 22.64ZM12.45 4.98L13.67 4.98L13.67 5.71C13.67 6.92 12.68 7.91 11.47 7.91L9.76 7.91L9.76 7.66C9.76 6.18 10.97 4.98 12.45 4.98ZM4.39 4.98L5.61 4.98C7.09 4.98 8.3 6.18 8.3 7.66L8.3 7.91L6.59 7.91C5.38 7.91 4.39 6.92 4.39 5.71L4.39 4.98ZM6.59 9.37L11.47 9.37C11.72 9.37 11.97 9.34 12.2 9.3L12.2 10.83L5.85 10.83L5.85 9.3C6.09 9.34 6.34 9.37 6.59 9.37ZM9.03 23.53C6.49 23.53 3.98 23.12 1.58 22.32L1.8 21.28C2.49 18.07 3.74 15.05 5.52 12.3L12.54 12.3C14.32 15.05 15.57 18.07 16.25 21.28L16.48 22.32C14.07 23.12 11.57 23.53 9.03 23.53Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
                 </svg>
@@ -18,7 +18,7 @@
             </a>
             <nav class="navigation__menu">
                 <ul class="navigation__links">
-                    <li><a href="../index.html" class="navigation__link">Главная</a></li>
+                    <li><a href="./index.html" class="navigation__link">Главная</a></li>
                     <li><a href="./shop.html" class="navigation__link">Магазин</a></li>
                     <li><a href="./about-brand.html" class="navigation__link">О бренде</a></li>
                     <li><a href="#" class="navigation__link">Контакты</a></li>
@@ -59,67 +59,42 @@
             </div>
         </header>
         <div class="heading center">
-            <h2 class="heading__title">Оформление заказа</h2>
+            <h2 class="heading__title">Контакты</h2>
             <div class="heading__breadcrumbs">
-                <a href="../index.html" class="heading__breadcrumbs-item">Главная</a>
-                <a href="#" class="heading__breadcrumbs-item">Оформление заказа</a>
+                <a href="./index.html" class="heading__breadcrumbs-item">Главная</a>
+                <a href="#" class="heading__breadcrumbs-item">Контакты</a>
             </div>
         </div>
     </section>
-
-    <section class="order center">
-        <div class="order__forms-order">
-            <form action="#" class="forms-order__form-client">
-                <p class="form-client__title">Данные покупателя</p>
-                <input type="text" placeholder="Имя" class="form-client__field">
-                <input type="email" placeholder="E-mail" class="form-client__field">
-                <input type="phone" placeholder="Телефон" class="form-client__field">
-            </form>
-            <form action="#" class="forms-order__form-address">
-                <p class="form-address__title">Адрес получателя</p>
-                <input type="text" placeholder="Страна" class="form-address__field">
-                <input type="text" placeholder="Город" class="form-address__field">
-                <input type="text" placeholder="Улица" class="form-address__field">
-                <input type="text" placeholder="Дом" class="form-address__field">
-                <input type="text" placeholder="Квартира" class="form-address__field">
-            </form>
-            <form action="#" class="forms-order__form-comments">
-                <p class="form-comments__title">Комментарии</p>
-                <textarea placeholder="Введите комментарий" class="form-comments__field"></textarea>
-            </form>
+    
+    <section class="contacts center">
+        <div class="contacts__block-map">
+            <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577332.5683088286!2d36.726176852026086!3d55.5810333861606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1734763809972!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="order__total-order">
-            <div class="total-order__total">
-                <p class="total__heading">Ваш заказ</p>
-                <div class="total__table-amount">
-                    <div class="table-amount__head">
-                        <p class="table-amount__col-product">Товар</p>
-                        <p class="table-amount__col-price">Всего</p>
-                    </div>
-                    <div class="table-amount__product">
-                        <p class="table-amount__product-name">Футболка USA</p>
-                        <p class="table-amount__product-price">129</p>
-                    </div>
-                    <div class="table-amount__sub-total">
-                        <p class="sub-total__title">Подытог</p>
-                        <p class="sub-total__price">129</p>
-                    </div>
-                    <div class="table-amount__total-price">
-                        <p class="total-price__title">Итого</p>
-                        <p class="total-price__price">129</p>
-                    </div>
-                </div>
+        <div class="contacts__info-block">
+            <div class="contacts__wrap-phone">
+                <p class="contacts__title-phone">Телефон</p>
+                <p class="contacts__phone">+7 (495) 823-54-12</p>
             </div>
-            <div class="total-order__payment-method">
-                <p class="payment-method__heading">Способы оплаты</p>
-                <ul class="payment-method__items">
-                    <label class="payment-method__item">
-                        <input type="checkbox" class="payment-method__mark">
-                        <span class="payment-method__cash">Оплата наличными</span>
-                    </label>
-                </ul>
-                <button class="total-order__create-order">Разместить заказ</button>
+            <div class="contacts__wrap-email">
+                <p class="contacts__title-email">E-mail</p>
+                <p class="contacts__email">info@sitename.com</p>
             </div>
+            <div class="contacts__wrap-address">
+                <p class="contacts__title-address">Адрес</p>
+                <p class="contacts__address">г. Москва, 3-я улица Строителей, 25</p>
+            </div>
+        </div>
+        <div class="contacts__wrapper-form">
+            <div class="wrapper-form__heading">Напишите нам</div>
+            <form action="#" class="wrapper-form__form-send">
+                <input type="text" placeholder="Имя" class="form-send__name">
+                <input type="email" placeholder="E-mail" class="form-send__email">
+                <input type="tel" placeholder="Телефон" class="form-send__phone">
+                <textarea name="" id="" placeholder="Сообщение" class="form-send__message"></textarea>
+                <button class="form-send__button">Отправить</button>
+            </form>
+            <div class="wrapper-form__status-send">Сообщение успешно отправлено</div>
         </div>
     </section>
 
@@ -140,10 +115,10 @@
                 <div class="footer__navigation">
                     <nav class="navigation__menu footer__navigation-menu">
                         <ul class="navigation__links">
-                            <li><a href="./main.html" class="navigation__link">Главная</a></li>
-                            <li><a href="#" class="navigation__link">Магазин</a></li>
-                            <li><a href="#" class="navigation__link">О бренде</a></li>
-                            <li><a href="#" class="navigation__link">Контакты</a></li>
+                            <li><a href="./index.html" class="navigation__link">Главная</a></li>
+                            <li><a href="./shop.html" class="navigation__link">Магазин</a></li>
+                            <li><a href="./about-brand.html" class="navigation__link">О бренде</a></li>
+                            <li><a href="./contacts.html" class="navigation__link">Контакты</a></li>
                         </ul>
                     </nav>
                     <nav class="footer__nav-categories">
