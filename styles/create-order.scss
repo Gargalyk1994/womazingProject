@@ -114,13 +114,14 @@
     }
     &__item{
         display: flex;
+        align-items: center;
         gap: 14px;
-        &>span {
-            display: inline-flex;
-            align-items: center;
-            user-select: none;
+        &>label {
+            // display: flex;
+            // align-items: center;
+            // user-select: none;
         }
-        &>span::before {
+        &>label::before {
             content: '';
             display: inline-block;
             width: 1em;
@@ -133,7 +134,7 @@
             background-position: center center;
             background-size: 50% 50%;
         }
-        &>input[type=checkbox]:checked + span:before {
+        &>input[type=checkbox]:checked + label:before {
             background-repeat: no-repeat;
             background-size: contain;
             background-image: url("../images/checkbox.png");

@@ -372,16 +372,10 @@ template {
 }
 .payment-method__item {
   display: flex;
+  align-items: center;
   gap: 14px;
 }
-.payment-method__item > span {
-  display: inline-flex;
-  align-items: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-.payment-method__item > span::before {
+.payment-method__item > label::before {
   content: "";
   display: inline-block;
   width: 1em;
@@ -394,7 +388,7 @@ template {
   background-position: center center;
   background-size: 50% 50%;
 }
-.payment-method__item > input[type=checkbox]:checked + span:before {
+.payment-method__item > input[type=checkbox]:checked + label:before {
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("../images/checkbox.png");
