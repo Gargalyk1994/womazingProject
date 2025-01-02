@@ -4,6 +4,9 @@
 @import './vars.scss';
 
 .cart-content{
+    &__products{
+        margin-bottom: 130px;
+    }
     &__header-products{
         display: grid;
         grid-template-columns: 3.5fr 1.5fr 2fr 1fr;
@@ -30,6 +33,14 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 88px;
+    }
+    &__total-amount{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 28px;
+        @include sameText();
+        font-size: 25px;
     }
 }
 
@@ -81,9 +92,17 @@
     &__wrap{
         display: flex;
         justify-content: end;
+        gap: 15px;
+        
+    }
+    &__summary{
+        display: flex;
+        gap: 69px;
+        padding: 16px 51px 31px 16px;
+        background-color: $colorAccentBack;
     }
     &__sub-total{
-        text-align: end;
+        font-size: 17px;
     }
     &__sub-price{
         &::before{
@@ -94,5 +113,8 @@
         &::before{
             content: "\0024";
         }
+    }
+    &__get-order{
+        @include accentButton();
     }
 }
