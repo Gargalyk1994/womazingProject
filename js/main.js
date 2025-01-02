@@ -2,20 +2,20 @@
 
 const productsData = [
     {
-        srcImage: "../images/product-photo1.png",
+        srcImage: "./images/product-photo1.png",
         altImage: "Product 1",
         name: "Футболка USA",
         oldPrice: "229",
         price: "129",
     },
     {
-        srcImage: "../images/product-photo2.png",
+        srcImage: "./images/product-photo2.png",
         altImage: "Product 2",
         name: "Купальник Glow",
         price: "129",
     },
     {
-        srcImage: "../images/product-photo3.png",
+        srcImage: "./images/product-photo3.png",
         altImage: "Product 3",
         name: "Свитшот Sweet Shot",
         price: "129",
